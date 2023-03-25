@@ -1,0 +1,91 @@
+*** Archiving Compression ,Vi Editor, Runlevel Changes Accounts, User Managements
+____________________________________________________________________________________
+   
+A) ARCHIVING THE FILE :->
+ 1) mkdir archive                            :--------> Create archive file
+
+ 2) cd archive/                              :--------> goto archive file
+
+ 3) touch file1.txt  file2.txt file3.txt     :--------> Creating multiple file
+
+ 4) tar -cvf file.tar file1.txt file2.txt file3.txt:--> grouping of files known as tapping
+                                                        archive(tar) and the output is 
+                                                        called tarball balls
+                                                       (Here c(creating), v(verbose), 
+                                                       f(file) )
+
+5) ls :--------------------------------------> To see whether the tar file is created or
+                                              not
+
+6) du sh file1.txt :-------------------------> To check the size of the file
+
+7) tar -tf file.tar :-------------------------> To view the tarfile content
+________________________________________________________________________________________________________________
+
+b) For Extraction of the file :--->
+
+  1) mkdir tape :-----------------------------> creating a file
+  2) mv file.tar tape/ :----------------------> cd tape/
+  3) ls
+  4) tar -xvf file.tar :-----------------------> For Extracting the file (
+                                              x(Extracting), v(verbose), f(file) )
+
+________________________________________________________________________________________________________________
+
+c) For Compression of the file :---->
+
+ 1) sudo apt install gzip :-------------------> For Installing the zip package
+ 2) sudo apt search gzip  :-------------------> For searching 
+ 3) gzip file.tar         :-------------------> For creating gunzip compression file
+ 4) du -sh file.tar.gz    :-------------------> For check the size of the compress file 
+ 5) bzip2 file1.txt       :-------------------> For Creating bunzip compression file
+ 
+_______________________________________________________________________________________________________________
+d) Note: -> It is preffer to do the  first archiving then Compression because doing Compression will cause the
+           data leakage leakage are of 2 type a) lossy(more leakage) b) lossless (less leakage)
+________________________________________________________________________________________________________________
+e) Decompression of the File 
+   a) bzip2 -d file2.tar.bz2     :----------------> For uncompression of the file
+   b) tar -tf file.tar           :----------------> To See the content of the file
+   c) gunzip file.tar.gz         :----------------> For Uncompression of the file
+   d) tar --help                 :----------------> Helping Command
+   e) man l                      :----------------> Helping Command and Getting The Documentation
+   f) sudo vi /etc/default/grub  :----------------> To See the Configuration of the file
+   e) :q!                        :----------------> To exit the command
+   f) sudo update-grub           :----------------> To update the grub
+   g) sudo reboot now 
+__________________________________________________________________________________________________________________
+f) cat /etc/group               :-----------------> To See the Group informations
+g) groups                       :-----------------> To See the groups
+h) id rahul                     :-----------------> To See the groups information related to the user "rahul"
+
+___________________________________________________________________________________________________________________
+i) How to Get the use to get all the admin Previlege
+ 1) id rahul                    :---------------> 27(sudo) (If anybody is attached to a group that means it have all the access)
+ 
+   -------------------------------------------------------------------------
+   1) su rahul        :---------------> To create a account
+   2) sudo apt update :---------------> For Updating
+   3) id vik          :---------------> To see the informations
+
+  --------------------------------------------------------------------------
+ The Better way is to create an account and give it to the sudo group
+  1) sudo adduser --ingroup sudo rahul2 :-------------> To Create a New User.
+  2) cat /etc/passwd                    :-------------> To see the information about the user 
+  
+**) Now in the last line it will show the 
+              rahul2:x:1001:27:Rahul_kumar_singh,42,9006876994,:/home/rahul2:/bin/bash
+              (rahul2:->"username"),(x:->"passwd"),(1001:->"user_id"),(27:->"group id which stand for sudo it is having the full 
+                  access")
+__________________________________________________________________________________________________________________________________
+
+j) su rahul :-----------------------> To Switch the user 
+
+
+
+
+
+
+ 
+
+    
