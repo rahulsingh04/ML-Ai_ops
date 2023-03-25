@@ -1,0 +1,116 @@
+1)  ls /                                     :----> List  Of File
+2)  ls /etc/                                 :----> To see the list of file 
+3)  vi /etc/passwd                           :----> To see the passwd file
+4)  :q                                       :----> for killing the character
+5)  sudo cat /etc/shadow                     :----> 
+6)  sudo cat /etc/host                       :----> To get the list of of host/user
+7)  df -h                                    :----> get the space available in ubantu
+8)  ls -a                                    :----> list of Hidden File. 
+                                            (... file will be the hidden file)
+
+9)  ls -lart                                 :----> list of hidden file (sorted with date)
+10) ls --help                                :----> To get the help 
+11) man -ls                                  :----> To get the help
+12) ls -lrt                                  : ---> same
+13) touch today.txt                          :---->  to create file
+
+14) touch today1.txt today2.txt today3.txt   :-> To create a multiple file
+15) cat today.txt                            :----> To see the file content
+16) vi today.txt                             :----> To change the text
+17) Now Press i for the insert mode
+18) after the writing is completed just press the escape(esc) now write :wq!
+19) touch                                    :-----> To Create a File
+
+20) vi mynewfile.txt                         :-----> TO Create a File 
+                                                (It Will Automatically Enter and 
+                                Ask You to Enter the Content
+				To Enter Something into your Document press "i",
+                                after entering the text press "esc", ":", "w", "q")
+
+21) cat                                      :-----> To Create a File (
+ 					eg= cat > randon1234.txt
+                                        enter your text 
+                                        Now Press "ctrl+d" to exit out)
+
+22) mkdir                                    :-----> To Create a Directory 
+
+23) mkdir -p dogcat1/fish                    :----->  (To create directory with file if not 
+                                                       exist with the help of -p)
+
+24) man mkdir                                :----->  Helping Command
+25) rmdir                                    :-----> Deleting the Directory
+
+26) rmdir -p                                 :-----> rmdir -p dogcat1/fish 
+                                               (Deleting  multiple directory)
+
+27) man rmdir                                :-----> Helping Command
+28) cp source_file Destination_file          :--> copy the file (eg = cp file.txt /home/rahul/Downloads)
+ 
+29) mv source_file Destination_file          :--> mooving the file(eg = mv file.txt /home/rahul/Downloads)
+
+30) mv previous_file_name new_file_name      :--> renaming file (eg = mv  old_file_name.txt new_file_name.txt)
+
+32) cat -n rahul.txt                         :--> adding the number in the text file
+
+33) cat -s rahul.txt                         :--> squeezing the text
+
+34) head rahul.txt                           :--> showing only the 10 lines
+
+35) man head                                 :---> helping hands
+
+36) tail logs.txt                            :---> last infomation
+
+37) tail -n 5 logs.txt                       :---> last 5 information
+
+38) grep Rahul rahulsingh.txt                :---> Finding the word "Rahul" in rahulsingh.txt file
+
+39) man grep                                 :----> Helping Command
+
+40) sort rahulsingh.txt                      :----> Sort each of the line on the basis of the 
+                                                    starting character
+
+41) rm -rf rahul/                            :----> To delete the whole directory within the rahul
+                                                   file (warnings :-- make sure there is
+                                                     not a important file )
+
+42) whoami                                   :----> To Know Your Username
+
+43) id                                       :----> To Get the user id
+
+44) cat /etc/passwd                          :----> here all the userid saved
+
+45) sudo useradd rahul2                      :----> To Create a New user 
+
+46) sudo passwd rahul2                       :----> To create the user password
+
+47) adduser testuser                         :----> Create new user (This will give you 
+                                                  the much more options)
+
+48) del user                                 :----> Delete the user 
+
+------------------------------------------------------------------------------
+
+48) chmod : - To Give permission to the file 
+
+    Note:-   Read(4)  , Write(2),  Execute(1)
+    We give permission to 3 things :->
+    
+  **** U         G          O
+      (User)   (Group)     (Other)
+      (RWX)    (RWX)       (RWX)
+
+Important_Points :-> 1)   0:------> Nothing
+                     2)   1:------> Executable
+                     3)   2:------> Write
+                     4)   3:------> Write/Execute
+                     5)   4:------> Read
+                     6)   5:------> Read/Execute
+                     7)   6:------> Read/Write
+                     9)   7:------> Rwx(read,write,execute)
+
+for eg :---> chmod 744 file.txt
+                   (All,  Read ,  Read)
+                   (User, Group, Other)
+---------------------------------------------------------------------------------------
+49)
+  

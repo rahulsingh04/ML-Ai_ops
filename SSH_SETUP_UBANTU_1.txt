@@ -1,0 +1,51 @@
+# Enable SSH in VM
+
+sudo apt update                   ## FOR UPDATING THE PACKAGE
+
+sudo apt upgrade                  # Not Necessary  
+                                  ## TO GET THE LATEST UPDATE OF THE UBANTU
+
+sudo apt install openssh-server   ## INSTALLING SSH KEY
+
+sudo service ssh start            ## STARTING SSH KEY
+
+sudo systemctl status ssh         ## CHECKING STATUS OF THE SSH KEY
+
+sudo ufw allow ssh                ## To enable the OpenSSH application in ubantu 
+                                  ## fire-wall
+
+sudo ufw enable                   ## ENABLING THE FIRE WALL
+
+sudo ufw status                   ## CHECKING THE STATUS OF THE FIRE WALL
+
+sudo reboot                       ## REBOOTING THE UBANTU SYSTEM  
+
+sudo apt install net-tools        ## if ifconfig is not working
+
+ifconfig
+
+###    10.0.2.15                ## from ifconfig copy first ip adress
+
+init 0                           ## for shut down ubantu service.
+
+######## AFTER SHUTTING DOWN VIRTUAL MACHINE 
+
+goto setting> network> port forwading> create new then, 
+
+Name = ssh, 
+Protocol = TCP ,
+Host_ip = 127.0.0.1,
+Host_port = 2222, 
+Guest_ip = 10.0.2.15, ### The very first name , 
+Guest_port = 22,
+
+
+ssh -p 2222 user_name@127.0.0.1  # From Windows  Powershell/Mobaxtreme
+
+Enter your password
+
+pwd
+
+cd Desktop
+
+mkdir mango

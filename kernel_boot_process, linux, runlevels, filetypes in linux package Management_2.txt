@@ -1,0 +1,20 @@
+In Ubantu Desktop larger GUI Runlevel is 5 
+
+1)  runlevel -----> N5
+2)  systemctl get default
+3) uname -r  -------> To Check Your Kernel 
+4) uname -a --------> for older version
+5) cat /etc/os-release ------> To get More Information
+Q1)  **How to create a named file ?
+       a) output of the one command will be the input of
+       the other command .
+       b) touch file.txt | cat file.txt > " My Name is Rahul singh "
+       c) ls
+
+Q2)  How can we use the multiple command  ? 
+     for that we can use the bash command
+
+    a) touch my_com.sh  :-> to create a bash file 
+    b) vi my_com.sh     :-> vi my_com.sh
+    c) 
+
