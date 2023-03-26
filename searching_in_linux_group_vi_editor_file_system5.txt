@@ -1,0 +1,94 @@
+***) Linux File System :---->
+    a) locate     b) find
+
+--------------------------------------------------------------------------------------------------------------
+a) locate file1.txt :--------------------------------------> This Will locate the "file1.txt" file.
+
+b) find /home/rahul/ -name fish1.txt:----------------------> It Helps to find out the "fish1.txt" file
+
+c) apt list :-----------------------------------------------> Possible package that are available
+
+d) grep search_text fruits.txt:-----------------------------> It will help to find the "search_text" in your
+                                                               "fruits.txt" in your file.
+
+e) grep -n search_text fruits.txt:--------------------------> It will help to find the line number of the 
+                                                              of the "search_text" in "fruits.txt" file.
+
+f) grep -w search_text fruits.txt:--------------------------> To search the exact word "search_text"
+
+g) grep -nw search_text fruits.txt:--------------------------> To search the n number of the 
+                                                                exact word "search_text"
+
+-----------------------------------------------------------------------------------------------
+i) How to change or update the password ?
+   
+  1) sudo su
+  2)passwd "rahul2" :----------------------------------------> To change the password of the
+                                                                'rahul2' user .
+
+  3) chgrp aiuser2 file.txt :--------------------------------> To change the name of the 
+                                                                 Group
+
+  4) sudo chown rahul2 file.txt:----------------------------->  
+
+h) grep -r apple .                :-----------------------> To search the "apple" in the multiple file.
+
+i) grep -A3 search_text fruits.txt :-----------------------> To search the "search_text" after in 
+                                                             the "fruits.txt" file
+
+j) grep -B3 search_text fruits.txt :-----------------------> To search the "search_text" before in the 
+                                                             "fruits.txt" file
+
+k) grep -A1 -B3 search_text fruits.txt:--------------------> To search before and after the "search_text" in
+                                                              in the "fruits.txt" file
+
+l) grep -i search_text fruits.txt :------------------------> To search the particular line in the 
+                                                              "fruits.txt" file
+____________________________________________________________________________________________________________
+
+m) Note :- To explore the vi editor explore the  vi cheatsheet
+____________________________________________________________________________________________________________
+
+n) sudo userdel tom : -------------------------------------> To Delete the User .
+
+o) cat /etc/group  :---------------------------------------> To See the Group Information
+
+______________________________________________________________________________________________________________
+***) Input / Output Stream 
+    
+    Data Stream : -----------------------------------------> Flow of Data
+    Data Stream is of 3 type :----------------------------->
+                a) Input  Stream 
+                b) Output Stream
+                c) Error Stream 
+
+#### Data Streaming :--------------------------------------> For I/p what will be the O/P is Known as data 
+                                                              Streaming 
+#### Error Streaming:--------------------------------------> For any type of I/p when there will be no o/p Then
+                                                             We will get some type of Exception known as 
+                                                             Error Streaming 
+
+p) cat missingfile 2> file7.txt:----------------------------> Log file will be created "file7.txt"
+
+q) cat missingfile 2>> file7.txt   | ------------------------> multiple log file save in "file7.txt"
+   cat missingfile 2>> file7.txt   |                            This will append the file 
+   cat missingfile 2>> file7.txt   |
+
+r) cat file7.txt                   :-------------------------> To See the content of the "file7.txt" file
+
+___________________________________________________________________________________________________________
+NOTE: ---->  
+            For input we can use this :---------------------->  ">"  (OUTPUT STREAM)
+            For Error we can use this :---------------------->  "2>" (ERROR STREAM)
+
+________________________________________________________________________________________________________________
+
+s) sudo chgrp rahul2 file.txt  :------------------------------> change group
+
+t) sudo chown rahul2 file.txt  :------------------------------> change ownership of the file
+
+_________________________________________________________________________________________________________________
+
+***) To change the password
+   a) sudo su
+   b) passwd rahul     :----------------------------------> To change the passwd for the rahul user
