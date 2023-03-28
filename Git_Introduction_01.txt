@@ -1,0 +1,69 @@
+####   GIT 
+1) Version systems
+2) Types of version systems
+3) Installation of Git
+4) Configuration GIT
+5) GIT Repository
+6) Types of Repository
+7) Reviving Repository History
+_________________________________
+***  git scm book *******
+   (pro git book)
+_________________________________
+*** git clone first time  after that we do the git pull
+________________________________________________________
+
+suppose we have app.py     in        remote we have  (github
+                                                      bilbulk
+                                                      gitlab)
+                     (PUSH)
+
+_____________________________________________________________________________
+
+**** WE HAVE TO TYPES OF GIT - MERGE
+1) FAST FORWARDING
+2) REGULAR
+
+______________________________________________________________________________
+*** ) THERE ARE THREE WORKING STAGE :->
+
+ modified file.txt           |  staged           | Commited
+ git status(untracked file)  |  staged area      |
+                             | git add file.txt  |
+                             | git add -A        |
+_________________________________________________________________________________
+
+1) git --version      :-> To check the version of the git
+
+2) start .            :-> Open the Home Folder
+
+3) git init           :-> For initialising the git repository
+
+4) git branch         :-> Tells you the current branch (master branch)  
+
+5) ls -a              :-> Git commanda already present 
+
+6) git status         :-> status
+
+7) vi random.txt      :-> creating a random file
+
+8) git status         :-> It will show the untracked file that we need to 
+                          tracked
+
+9) It is in the modified stage  , now we have to moove it into an staged area
+
+10) git add -A        :-> untracked file to tracked file
+
+11) git status        :-> All the file are tracked 
+
+12) git -m commit "commit":-> commiting stage
+
+13) git status  :--->  (nothing to clean ie means there is no modified files)
+
+14) git log     :--> Author and the Date it will given
+
+15)git log --oneline :- one line git log
+
+
+
+
