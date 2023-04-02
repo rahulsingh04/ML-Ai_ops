@@ -1,0 +1,137 @@
+###) Rebasing, Interactive, Ammend
+1) diff
+2) rebase
+3) revert
+4) stash
+_________________________________________________________________________________________
+## git diff:-> find the changes/version of a file in a repository
+               It Basics tell us that what changes we have done in our
+               repository.
+
+_________________________________________________________________________________________
+1) vi calc1.txt :->   (Enter the text  then "calc1" , then enter ":wq!" then
+                        use the command "yy" to copy and "pp" to paste)
+
+2) vi calc2.txt :->      (Same)
+
+3) git add -A   :->  Adding the File
+
+4) git commit -m "":->
+_________________________________________________________________________________________
+
+####
+
+1) diff 
+2) rebase
+2) stash
+_________________________________________________________________________________________
+
+#### Merging and Rebasing :->
+
+Same task but with diffrent technical ideas
+
+
+Rebase : -> Each of the commit will be copy one by one on tip of the Master
+
+___________________________________________________________________________________________
+### ) When to do the Merging and the   Rebasing Operation ?
+
+     Merging is good when the changes are not atomic  {Main File}
+     Rebasing is good when the changes are sub atomic {Files of Files}
+
+     When Masteris coming to an Issue Merge is good and for any branch {any eg "A", "B", "C", "D"} now if we 
+     want  to do the merge operation A to B Then we will do the Rebase
+
+
+  Merge:-----> Atomic Branch , Master Branch 
+  Rebase: ---> sub-atomic , sub - branches
+
+_________________________________________________________________________________________
+
+##) we will faced merge conflict when the some lines/files are changed by a Multiple
+    user(person).
+
+##) We can solve this proble by :-->
+   a) Use Ammend Operation
+   b) Then do the merge operation
+
+__________________________________________________________________________________________
+
+Commit Manipulation :-> whenever we do the rebase operation then the commit Id will be 
+                        changed
+
+
+#### Diffrent type of commit 
+   a) ammend 
+   b) drop
+   c) reward 
+   d) squad
+
+       The operation known as commit will give us the full power
+
+
+__________________________________________________________________________________________
+###  Does merge conflict in Remote ?
+
+   ------------------------  N.O ------------------------------
+
+________________________________________________________________________________________
+
+## BASICS STEPS :->
+    git pull
+    git merge
+    git push 
+
+__________________________________________________________________________________________
+
+git switch master
+git pull origin master
+git merge feature 
+git push 
+
+
+____________________________________________________________________________________________
+
+1) git remote -v
+2) git checkout -b hotspot (Switch to new branch ) 
+3) git log --oneline --graph --a
+
+##) Interactive Rebasing
+1) Delete
+2) Reorders Commits
+3) Change   Commits
+4) Splitting Commits
+5) Melding   Commits
+
+_________________________________________________________________________________________
+1) git rebase -i HEAD~3 :---->  Combining 3 Commit together ("i" here stands for
+                                              Interactive)
+ In this a new sublime will come "3 times pick which means commit has been done
+ now in the last 2 line we will write squash squash  which means  'USE COMMIT
+                                     BUT MELD INTO PREVIOUS COMMIT ' "
+
+
+######  
+   SQUASH  
+For eg : -> we have, 
+          commit 1  :- here it means melding commit
+          commit 2}
+          commit 3} all 3 commit will put into an commit 1
+
+
+Now we will write :->
+                   Aboutme  Added Rebased sucessfully
+
+git log --oneline :->  Now you will see all the all the old commit gone , 
+                     and everything is available inside the commit 1(or single case)
+
+
+________________________________________________________________________________________
+### deleting the commit 
+
+1) git rebase -i HEAD~2 :->(Now sublime will enter and write "drop" before commit)
+2) git commit --amend --no-edit :-> (old commit we have added all that thing i.e 
+                                   message is not edited)
+### ammend command always modify the latest commit
+3) git commit -amend  :-> add multiple commit in your recent file.
+
